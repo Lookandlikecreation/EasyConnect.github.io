@@ -1,0 +1,593 @@
+/* Custom styles and animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8B5CF6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
+}
+
+
+/* Navbar transitions */
+
+nav {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s ease;
+}
+
+nav.scroll-down {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+nav.scroll-up {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+
+/* Section styling */
+
+.section {
+    scroll-margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Card hover effects */
+
+.service-card,
+.contact-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.service-card:hover,
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+
+/* Contact icons */
+
+.contact-icon {
+    transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* Hero section */
+
+.hero-section {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/></svg>') center/cover;
+    opacity: 0.1;
+}
+
+
+/* Form input focus styles */
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+    border-color: #8B5CF6;
+}
+
+
+/* Button styles */
+
+.btn-primary {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 1rem;
+    }
+    .hero-text {
+        font-size: 2.5rem;
+    }
+    .service-card,
+    .contact-card {
+        margin-bottom: 1.5rem;
+    }
+    nav {
+        padding: 0.5rem 1rem;
+    }
+    .mobile-menu {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.98);
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+
+
+/* Animation for service icons */
+
+.service-icon {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+/* Map container */
+
+.map-container {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+}
+
+.map-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.map-container iframe {
+    filter: contrast(1.1) saturate(1.2);
+    transition: all 0.3s ease;
+}
+
+.map-container:hover iframe {
+    filter: contrast(1.2) saturate(1.3);
+}
+
+
+/* Footer styling */
+
+footer {
+    background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+}
+
+.footer-link {
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #8B5CF6;
+    transform: translateX(5px);
+}
+
+
+/* Loading animation */
+
+.loading-spinner {
+    border: 3px solid rgba(139, 92, 246, 0.1);
+    border-radius: 50%;
+    border-top: 3px solid #8B5CF6;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Logo styles */
+
+nav img {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+nav a:hover img {
+    transform: scale(1.05);
+}
+
+footer img {
+    filter: brightness(1.2) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+
+/* Typography */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -0.025em;
+}
+
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Text gradient effect for main headings */
+
+.hero-section h1 {
+    background: linear-gradient(to right, #ffffff, #f3f4f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section subtitles */
+
+.section p.text-center {
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Service card titles */
+
+.service-card h3 {
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+
+/* List items in service cards */
+
+.service-card ul li {
+    line-height: 1.6;
+}
+
+
+/* Contact information */
+
+.contact-card a {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+
+/* Footer links */
+
+.footer-link {
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+
+/* Associates section */
+
+.aspect-w-16 {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.aspect-w-16>img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+}
+
+
+/* Logo card hover effects */
+
+.bg-white.p-6 {
+    transition: all 0.3s ease;
+}
+
+.bg-white.p-6:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Logo image hover effect */
+
+.bg-white.p-6 img {
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.bg-white.p-6:hover img {
+    filter: grayscale(0%);
+}
+
+
+/* Contact section styles */
+
+.contact-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.contact-info-group {
+    position: relative;
+}
+
+.contact-info-group::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(139, 92, 246, 0.1), transparent);
+}
+
+.contact-info-group:last-child::after {
+    display: none;
+}
+
+
+/* Contact card hover effects */
+
+.contact-card {
+    transform: translateY(0);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Icon container animations */
+
+.w-10.h-10 {
+    transition: all 0.3s ease;
+}
+
+.group:hover .w-10.h-10 {
+    transform: scale(1.1);
+}
+
+
+/* Social media hover states */
+
+.hover\:bg-green-50:hover {
+    background-color: rgba(236, 253, 245, 0.8);
+}
+
+.hover\:bg-pink-50:hover {
+    background-color: rgba(253, 242, 248, 0.8);
+}
+
+
+/* Business hours card */
+
+.bg-gray-50 {
+    transition: all 0.3s ease;
+}
+
+.bg-gray-50:hover {
+    background-color: rgba(139, 92, 246, 0.05);
+}
+
+
+/* Office section styles */
+
+.office-contact-card {
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    transform: translateY(0);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.office-contact-card:hover {
+    border-color: rgba(139, 92, 246, 0.2);
+    transform: translateY(-2px);
+}
+
+
+/* Location info styles */
+
+.pl-16 p {
+    position: relative;
+    padding-left: 0;
+    transition: all 0.3s ease;
+}
+
+.pl-16 p:hover {
+    padding-left: 10px;
+    color: #4B5563;
+}
+
+
+/* Icon container styles */
+
+.w-12.h-12 {
+    transition: all 0.3s ease;
+}
+
+.office-contact-card:hover .w-12.h-12 {
+    transform: scale(1.1);
+    background-color: rgba(139, 92, 246, 0.2);
+}
+
+
+/* Services section specific styles */
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(249, 250, 251, 0.8));
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #8B5CF6, #6D28D9);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon-wrapper {
+    position: relative;
+}
+
+.service-icon-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(139, 92, 246, 0.2), transparent);
+    bottom: -16px;
+    left: 0;
+}
+
+.service-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to right, transparent, rgba(139, 92, 246, 0.1), transparent);
+    transition: left 0.3s ease;
+}
+
+.service-item:hover::before {
+    left: 100%;
+}
+
+.service-item i {
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover i {
+    transform: scale(1.2);
+}
+
+.service-item span {
+    transition: color 0.3s ease;
+}
+
+.service-item:hover span {
+    color: #6D28D9;
+}
+
+
+/* Service card icon container animation */
+
+.service-icon-wrapper .w-16 {
+    position: relative;
+    z-index: 1;
+}
+
+.service-icon-wrapper .w-16::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-icon-wrapper .w-16::before {
+    opacity: 0.1;
+}
+
+
+/* Service card hover state */
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.1), 0 10px 10px -5px rgba(139, 92, 246, 0.04);
+}

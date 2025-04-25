@@ -1,0 +1,51 @@
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=samanvay%20status&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="samanvay status" aria-label="samanvay status"></iframe>
+<!-- Banking Partners -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-center mb-8 text-purple-600">Banking Partners</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Add your bank logos here -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://placeholder.com/300x200" alt="SBI Logo" class="object-contain w-full h-full">
+                        </div>
+                        <p class="text-center mt-4 font-medium text-gray-700">State Bank of India</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://placeholder.com/300x200" alt="HDFC Bank Logo" class="object-contain w-full h-full">
+                        </div>
+                        <p class="text-center mt-4 font-medium text-gray-700">HDFC Bank</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://placeholder.com/300x200" alt="ICICI Bank Logo" class="object-contain w-full h-full">
+                        </div>
+                        <p class="text-center mt-4 font-medium text-gray-700">ICICI Bank</p>
+                    </div>
+                </div>
+            </div>
+
+<div>
+                <h3 class="text-2xl font-semibold text-center mb-8 text-purple-600">Financial Partners</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Add your financial institution logos here -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://placeholder.com/300x200" alt="Mutual Funds Logo" class="object-contain w-full h-full">
+                        </div>
+                        <p class="text-center mt-4 font-medium text-gray-700">Mutual Fund Houses</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://placeholder.com/300x200" alt="Investment Firms Logo" class="object-contain w-full h-full">
+                        </div>
+                        <p class="text-center mt-4 font-medium text-gray-700">Investment Firms</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://placeholder.com/300x200" alt="Financial Advisors Logo" class="object-contain w-full h-full">
+                        </div>
+                        <p class="text-center mt-4 font-medium text-gray-700">Financial Advisors</p>
+                    </div>
+                </div>
+            </div>
